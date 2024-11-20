@@ -143,13 +143,12 @@ public class GameManager : MonoBehaviour
 
     private void OnEnemyDeath()
     {
-        Debug.Log("is dead");
         currentSpawnCount--;
     }
 
     private void ProcessWaveConditions()
     {
-        if (currentWaveIndex % 20 == 10)
+        if (currentWaveIndex % 20 == 9)
         {
             RandomDebuff();
         }
@@ -179,7 +178,8 @@ public class GameManager : MonoBehaviour
 
     private void IncreaseWaveSpawnCount()
     {
-        waveSpawnCount++;
+        // waveSpawnCount++;
+        waveSpawnCount = 1;
     }
 
     private void CreateReward()
@@ -252,7 +252,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateWaveUI()
     {
-        waveText.text = (currentWaveIndex + 1).ToString();
+        // waveText.text = (currentWaveIndex + 1).ToString();
         waveText.text = $"{currentWaveIndex + 1}"; // 보간 문자열
     }
 

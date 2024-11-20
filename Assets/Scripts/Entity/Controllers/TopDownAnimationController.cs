@@ -3,15 +3,16 @@ using UnityEngine;
 
 public class TopDownAnimationController : AnimationController
 {
-    private static readonly int isWalking = Animator.StringToHash("isWalking");
-    private static readonly int isHit = Animator.StringToHash("isHit");
-    private static readonly int attack = Animator.StringToHash("attack");
+    private static readonly int isWalking = Animator.StringToHash("IsWalking");
+    private static readonly int isHit = Animator.StringToHash("IsHit");
+    private static readonly int attack = Animator.StringToHash("Attack");
     private readonly float magnitudeThreshold = 0.5f;
     HealthSystem healthSystem;
 
     protected override void Awake()
     {
         base.Awake();
+
         healthSystem = GetComponent<HealthSystem>();
     }
 

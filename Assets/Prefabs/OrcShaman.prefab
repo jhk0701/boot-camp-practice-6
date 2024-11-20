@@ -244,10 +244,10 @@ GameObject:
   - component: {fileID: 7796516058143062388}
   - component: {fileID: 5874028953994424479}
   - component: {fileID: 5308264426807954247}
+  - component: {fileID: 2779587131082011772}
   - component: {fileID: 6465609721086492904}
   - component: {fileID: 7307162707902111517}
   - component: {fileID: 1937300934397920347}
-  - component: {fileID: 2779587131082011772}
   - component: {fileID: 6767149972489537585}
   - component: {fileID: 8231365464487781736}
   - component: {fileID: 2758132515297984406}
@@ -366,6 +366,27 @@ MonoBehaviour:
     speed: 2
     attackSO: {fileID: 11400000, guid: cff3f99c7bf9b3f4d8d717010dc875dc, type: 2}
   statModifiers: []
+--- !u!95 &2779587131082011772
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082982829545674163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b0e9546ebfce3944a4d1d7eefb69cb9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6465609721086492904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,27 +425,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 15
   shootRange: 10
---- !u!95 &2779587131082011772
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6082982829545674163}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b0e9546ebfce3944a4d1d7eefb69cb9, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6767149972489537585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
   damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  <CurrentHealth>k__BackingField: 0
 --- !u!114 &4662139769902025758
 MonoBehaviour:
   m_ObjectHideFlags: 0

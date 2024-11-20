@@ -32,11 +32,11 @@ public class HealthSystem : MonoBehaviour
 
     void Update()
     {
-        if(isAttacked && timeSinceLastChange < healthChangeDelay)
+        if (timeSinceLastChange < healthChangeDelay)
         {
             timeSinceLastChange += Time.deltaTime;
 
-            if(timeSinceLastChange >= healthChangeDelay)
+            if(isAttacked && timeSinceLastChange >= healthChangeDelay)
             {
                 OnInvincibilityEnd?.Invoke();
                 isAttacked = false;

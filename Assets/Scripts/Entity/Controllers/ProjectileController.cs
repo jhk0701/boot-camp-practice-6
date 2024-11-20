@@ -55,7 +55,6 @@ public class ProjectileController : MonoBehaviour
     {
         if(createFx)
         {
-            // TODO : 파티클 적용 시, 제거하는 부분
             ParticleSystem particleSystem = GameManager.Instance.EffectParticle;
             
             particleSystem.transform.position = dir;

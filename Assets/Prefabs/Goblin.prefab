@@ -96,12 +96,13 @@ GameObject:
   - component: {fileID: 2904278106163865312}
   - component: {fileID: 6120378982167204672}
   - component: {fileID: 6106392287583913834}
+  - component: {fileID: 8994660496980856408}
   - component: {fileID: 6477452644182728677}
   - component: {fileID: 5147198230434201237}
-  - component: {fileID: 8994660496980856408}
   - component: {fileID: 778413445297536312}
   - component: {fileID: -6509784527791632282}
   - component: {fileID: 8858485737137099764}
+  - component: {fileID: -8642306624953215277}
   m_Layer: 6
   m_Name: Goblin
   m_TagString: Untagged
@@ -215,6 +216,27 @@ MonoBehaviour:
     speed: 2
     attackSO: {fileID: 11400000, guid: e16652bd37713ff4080d36e08bc25fda, type: 2}
   statModifiers: []
+--- !u!95 &8994660496980856408
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096386390389186040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6457f3e2493bced4baac5108113bfb31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6477452644182728677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,27 +261,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063f49e61f298f943a8938ff8a522a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &8994660496980856408
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7096386390389186040}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6457f3e2493bced4baac5108113bfb31, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &778413445297536312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthChangeDelay: 0.5
   damageClip: {fileID: 8300000, guid: b43d102aac6b145468dcaa94a5cccae1, type: 3}
+  <CurrentHealth>k__BackingField: 0
 --- !u!114 &8858485737137099764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,3 +303,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d78dab1e89c2bd43b6173eeded31886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &-8642306624953215277
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096386390389186040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
